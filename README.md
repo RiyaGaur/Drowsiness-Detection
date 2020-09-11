@@ -12,5 +12,5 @@ conda install -c conda-forge dlib
 ### [Facial Landmarks Detection](https://www.pyimagesearch.com/2018/04/02/faster-facial-landmark-detector-with-dlib/) (Have a general knowledge)
 
 <p align="center">
-  <img width="300" height="280" src="https://cdn-images-1.medium.com/max/1600/1*96UT-D8uSXjlnyvs9DZTog.png">
+  <img width="500" height="480" src="https://cdn-images-1.medium.com/max/1600/1*96UT-D8uSXjlnyvs9DZTog.png">
 </p>
