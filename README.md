@@ -8,6 +8,7 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 ## Tools Used
  1. OpenCV
  2. Dlib
+ 3. Pygame
  
 <br> 
 
@@ -17,6 +18,10 @@ pip install python-contrib-opencv
 
 ### Installing Dlib
 conda install -c conda-forge dlib
+<br>
+
+### Installing Pygame
+pip install pygame
 
 <br>
 
