@@ -8,6 +8,8 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 ### Installing Dlib
 conda install -c conda-forge dlib
 
+<br>
+
 ## Basic Knowledge
 ### [Facial Landmarks Detection](https://www.pyimagesearch.com/2018/04/02/faster-facial-landmark-detector-with-dlib/) (Have a general knowledge)
 
