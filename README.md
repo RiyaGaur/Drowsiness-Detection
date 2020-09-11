@@ -6,7 +6,11 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 <br>
 
 ## Tools Used
-
+ 1. OpenCV
+ 2. Dlib
+ 
+ <br> 
+ 
 ### Installing Dlib
 conda install -c conda-forge dlib
 
