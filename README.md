@@ -9,8 +9,12 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
  1. OpenCV
  2. Dlib
  
- <br> 
- 
+<br> 
+
+### Installing OpenCV
+pip install python-contrib-opencv
+<br>
+
 ### Installing Dlib
 conda install -c conda-forge dlib
 
