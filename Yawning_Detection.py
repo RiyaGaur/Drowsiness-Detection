@@ -10,9 +10,8 @@ cap = cv2.VideoCapture(0)
 yawn_count = 0
 count_yawn = 0
 elapsed = 0
-start=0
-# local_time = time.ctime(start)
-# print("Local time:", local_time)
+timer_start = 0
+yawn_timer = 0
 while True:
 
     ret, frame = cap.read()
@@ -21,7 +20,7 @@ while True:
     faces = detector(gray)
     for face in faces:
         landmarks = predictor(gray, face)
-        # nose = landmarks.parts()[27]
+        # nose = landmarks.parts()[27] ( Finding the center )
         # cv2.circle(frame, (nose.x, nose.y), 2, (255, 0, 0), 3)
         for point in landmarks.parts():
             cv2.circle(frame, (point.x, point.y), 2, (255, 0, 0), 3)
@@ -33,21 +32,31 @@ while True:
             # print("Yawn")
             yawn_count += 1
             if yawn_count == 1:
-                start = time.time()
-
-        # print(yawn_count)
-            # mixer.init()
-            # mixer.music.load("alarm.wav")
-            # mixer.music.play()
-
+                yawn_timer = time.time()
         else:
             # print("Close")
-            yawn_count=0
-            elapsed = time.time() - start
-            start=0
+            yawn_count = 0
+            elapsed = time.time() - yawn_timer
+            yawn_timer = 0
             if 5 < elapsed < 30:
                 count_yawn += 1
-                print(count_yawn)
+                # print(count_yawn)
+                
+        if count_yawn == 0:
+            timer_start = time.time()
+            # print(start2)
+            
+        timer_end = time.time() - timer_start
+        print(timer_end)
+        
+        if 1800 < timer_end < 1820:
+            count_yawn = 0
+            # print(count_yawn)
+            
+        if count_yawn == 5:
+            mixer.init()
+            mixer.music.load("alarm.wav")
+            mixer.music.play()
         # print(yawn_count)
     if ret:
         cv2.imshow("My Screen", frame)
@@ -59,4 +68,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
+print(count_yawn)
