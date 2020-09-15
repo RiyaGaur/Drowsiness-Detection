@@ -13,15 +13,15 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 <br> 
 
 ### Installing OpenCV
-pip install python-contrib-opencv
+`pip install python-contrib-opencv`
 <br>
 
 ### Installing Dlib
-conda install -c conda-forge dlib
+`conda install -c conda-forge dlib`
 <br>
 
 ### Installing Pygame
-pip install pygame
+`pip install pygame`
 
 <br>
 
