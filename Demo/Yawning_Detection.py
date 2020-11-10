@@ -4,7 +4,7 @@ from pygame import mixer
 import time
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("../Files/shape_predictor_68_face_landmarks.dat")
 cap = cv2.VideoCapture(0)
 counter = 0  # Counter to initialize yawn_timer
 count_yawn = 0  # Total number of yawns
