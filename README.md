@@ -7,8 +7,8 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 
 ## Tools Used
  1. OpenCV
- 2. Dlib
- 3. Pygame
+ 2. dlib
+ 3. pygame
  4. imutils
  5. scipy
  
