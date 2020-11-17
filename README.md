@@ -9,6 +9,8 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
  1. OpenCV
  2. Dlib
  3. Pygame
+ 4. imutils
+ 5. scipy
  
 <br> 
 
