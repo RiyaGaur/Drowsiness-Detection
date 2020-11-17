@@ -13,7 +13,7 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 <br> 
 
 ### Installing OpenCV
-`pip install python-contrib-opencv`
+`pip install opencv-contrib-python`
 <br>
 
 ### Installing Dlib
