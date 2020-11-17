@@ -22,6 +22,13 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 
 ### Installing Pygame
 `pip install pygame`
+<br>
+
+### Installing imutils
+`pip install imutils`
+
+### Installing scipy
+`pip install scipy`
 
 <br>
 
