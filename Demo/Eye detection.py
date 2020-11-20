@@ -1,7 +1,7 @@
 from scipy.spatial import distance
 from imutils import face_utils
 import numpy as np
-import pygame #For playing sound
+import pygame               #For playing sound
 import time
 import dlib
 import cv2
@@ -43,7 +43,6 @@ video_capture = cv2.VideoCapture(0)
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS['right_eye']
 
 
-
 #Give some time for camera to initialize(not required)
 # time.sleep(2)
 
@@ -63,7 +62,7 @@ while(True):
     # for (x,y,w,h) in face_rectangle:
         # cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
 
-    #Detect facial points
+    # Detect facial points
     for face in faces:
 
         shape = predictor(gray, face)
@@ -82,8 +81,8 @@ while(True):
         #Use hull to remove convex contour discrepencies and draw eye shape around eyes
         leftEyeHull = cv2.convexHull(leftEye)
         rightEyeHull = cv2.convexHull(rightEye)
-        cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
-        cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
 
         #Detect if eye aspect ratio is less than threshold
         if(eyeAspectRatio < EYE_ASPECT_RATIO_THRESHOLD):

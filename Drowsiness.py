@@ -84,8 +84,8 @@ while(True):
         #Use hull to remove convex contour discrepencies and draw eye shape around eyes
         leftEyeHull = cv2.convexHull(leftEye)
         rightEyeHull = cv2.convexHull(rightEye)
-        cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
-        cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [leftEyeHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [rightEyeHull], -1, (0, 255, 0), 1)
 
         #Detect if eye aspect ratio is less than threshold
         if(eyeAspectRatio < EYE_ASPECT_RATIO_THRESHOLD):
@@ -96,7 +96,7 @@ while(True):
                 cv2.putText(frame, "You are Drowsy", (150,300), cv2.FONT_HERSHEY_DUPLEX, 1.5, (0,0,255), 2)
 
         else:
-            mixer.music.stop()
+            # mixer.music.stop()
             COUNTER = 0
 
 
@@ -110,7 +110,7 @@ while(True):
 
         # Use hull to remove convex contour discrepencies and draw eye shape around eyes
         mouthHull = cv2.convexHull(mouth)
-        cv2.drawContours(frame, [mouthHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [mouthHull], -1, (0, 255, 0), 1)
 
 
         # nose = landmarks.parts()[27] ( Finding the center )
@@ -131,7 +131,7 @@ while(True):
             if counter > 100:
                 count_yawn += 1
                 counter = 0
-                # print(count_yawn)
+                print("Yawn Count = ",count_yawn)
 
         if count_yawn == 0:
             timer_start = time.time()

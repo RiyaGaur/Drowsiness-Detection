@@ -17,6 +17,7 @@ yawn_timer = 0
 #Extract indexes of facial landmarks for mouth
 (Start, End) = face_utils.FACIAL_LANDMARKS_IDXS['mouth']
 
+
 while True:
 
     ret, frame = cap.read()  # Reading frames from the video (Web cam)
@@ -32,7 +33,7 @@ while True:
 
         # Use hull to remove convex contour discrepencies and draw eye shape around eyes
         mouthHull = cv2.convexHull(mouth)
-        cv2.drawContours(frame, [mouthHull], -1, (0, 255, 0), 1)
+        # cv2.drawContours(frame, [mouthHull], -1, (0, 255, 0), 1)
 
         # nose = landmarks.parts()[27] ( Finding the center )
         # cv2.circle(frame, (nose.x, nose.y), 2, (255, 0, 0), 3)
