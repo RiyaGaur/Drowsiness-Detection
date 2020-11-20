@@ -7,13 +7,15 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 
 ## Tools Used
  1. OpenCV
- 2. Dlib
- 3. Pygame
+ 2. dlib
+ 3. pygame
+ 4. imutils
+ 5. scipy
  
 <br> 
 
 ### Installing OpenCV
-`pip install python-contrib-opencv`
+`pip install opencv-contrib-python`
 <br>
 
 ### Installing Dlib
@@ -22,6 +24,13 @@ So, to prevent these accidents we will build a system using Python, OpenCV, and 
 
 ### Installing Pygame
 `pip install pygame`
+<br>
+
+### Installing imutils
+`pip install imutils`
+
+### Installing scipy
+`pip install scipy`
 
 <br>
 
